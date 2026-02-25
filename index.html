@@ -1,126 +1,150 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dipsan Shrestha | Portfolio</title>
+<title>Dipsan Shrestha | IT Student Portfolio</title>
+
 <style>
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-background: linear-gradient(135deg, #f5f7fa 0%, #e4e9fd 100%);
-color: #2c3e50;
-line-height: 1.7;
-min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e9fd 100%);
+    color: #2c3e50;
+    line-height: 1.7;
+    min-height: 100vh;
 }
+
 .container {
-max-width: 1000px;
-margin: 0 auto;
-padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
 }
+
 header {
-text-align: center;
-padding: 60px 0 40px;
+    text-align: center;
+    padding: 60px 0 40px;
 }
+
 h1 {
-font-size: 3.2em;
-color: #2c3e50;
-margin-bottom: 12px;
-font-weight: 700;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
+
 .intro {
-font-size: 1.4em;
-color: #555;
-margin-bottom: 50px;
+    font-size: 1.3em;
+    color: #555;
 }
+
 section {
-background: white;
-border-radius: 12px;
-padding: 35px;
-margin: 30px 0;
-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 30px 0;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
-section:hover {
-transform: translateY(-8px);
-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-}
+
 h2 {
-color: #2980b9;
-font-size: 1.9em;
-margin-bottom: 20px;
-position: relative;
-padding-bottom: 10px;
+    color: #2980b9;
+    margin-bottom: 15px;
 }
-h2::after {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 60px;
-height: 3px;
-background: #3498db;
-border-radius: 2px;
-}
+
 ul.skills {
-display: flex;
-flex-wrap: wrap;
-gap: 15px;
-list-style: none;
-padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
+
 ul.skills li {
-background: #e8f4fd;
-color: #2980b9;
-padding: 12px 24px;
-border-radius: 30px;
-font-weight: 500;
-transition: all 0.3s;
+    background: #e8f4fd;
+    color: #2980b9;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
 }
-ul.skills li:hover {
-background: #3498db;
-color: white;
-transform: translateY(-3px);
-}
+
 .fyp-section {
-text-align: center;
+    text-align: center;
 }
+
 .fyp-button {
-display: inline-block;
-margin-top: 30px;
-padding: 18px 50px;
-font-size: 1.3em;
-font-weight: bold;
-color: white;
-background: linear-gradient(135deg, #3498db, #2980b9);
-border: none;
-border-radius: 50px;
-cursor: pointer;
-text-decoration: none;
-box-shadow: 0 8px 25px rgba(52, 152, 219, 0.35);
-transition: all 0.4s ease;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 45px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background: #2980b9;
+    border-radius: 40px;
+    text-decoration: none;
 }
-.fyp-button:hover {
-transform: translateY(-5px) scale(1.05);
-box-shadow: 0 15px 40px rgba(52, 152, 219, 0.45);
-background: linear-gradient(135deg, #2980b9, #3498db);
-}
+
 footer {
-text-align: center;
-margin-top: 80px;
-padding: 30px 0;
-color: #777;
-font-size: 0.95em;
-border-top: 1px solid #eee;
-}
-@media (max-width: 768px) {
-h1 { font-size: 2.5em; }
-section { padding: 25px; }
-.fyp-button { padding: 15px 40px; font-size: 1.1em; }
+    text-align: center;
+    margin-top: 60px;
+    color: #777;
+    font-size: 0.9em;
 }
 </style>
 </head>
+
 <body>
+
+<div class="container">
+
+<header>
+    <h1>Dipsan Shrestha</h1>
+    <p class="intro">
+        3rd Year BSc IT Student | Autumn 2023 Intake
+    </p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am currently studying in the 3rd year of the Bachelor of Science in Information Technology (BSc IT).
+        I am an Autumn 2023 intake student. I have a strong interest in web development,
+        backend systems, and building real-world applications.
+    </p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>Laravel</li>
+        <li>MySQL</li>
+        <li>Git & GitHub</li>
+    </ul>
+</section>
+
+<section class="fyp-section">
+    <h2>Final Year Project</h2>
+    <p>
+        <strong>SkillLink (SewaGhar)</strong> – A local service booking system
+        that connects customers with verified service providers.
+    </p>
+
+    <a href="https://fyp.yourdomain.com.np" class="fyp-button">
+        View Final Year Project
+    </a>
+</section>
+
+<footer>
+    © 2026 Dipsan Shrestha | BSc IT Student
+</footer>
+
+</div>
+
+</body>
+</html>
