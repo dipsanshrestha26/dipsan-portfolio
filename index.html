@@ -5,100 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dipsan Shrestha | Portfolio</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e9fd 100%);
+            color: #2c3e50;
+            line-height: 1.7;
+            min-height: 100vh;
         }
         .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            padding: 60px 0 40px;
         }
         h1 {
+            font-size: 3.2em;
             color: #2c3e50;
-            text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            font-weight: 700;
         }
-        p.intro {
-            text-align: center;
-            font-size: 1.2em;
+        .intro {
+            font-size: 1.4em;
             color: #555;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+        }
+        section {
+            background: white;
+            border-radius: 12px;
+            padding: 35px;
+            margin: 30px 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
         }
         h2 {
-            color: #34495e;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 8px;
-            margin-top: 50px;
+            color: #2980b9;
+            font-size: 1.9em;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
         }
-        ul {
-            list-style-type: square;
-            padding-left: 30px;
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #3498db;
+            border-radius: 2px;
         }
-        li {
-            margin-bottom: 10px;
+        ul.skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+        }
+        ul.skills li {
+            background: #e8f4fd;
+            color: #2980b9;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        ul.skills li:hover {
+            background: #3498db;
+            color: white;
+            transform: translateY(-3px);
+        }
+        .fyp-section {
+            text-align: center;
         }
         .fyp-button {
             display: inline-block;
             margin-top: 30px;
-            padding: 14px 32px;
-            font-size: 1.1em;
+            padding: 18px 50px;
+            font-size: 1.3em;
             font-weight: bold;
             color: white;
-            background-color: #3498db;
+            background: linear-gradient(135deg, #3498db, #2980b9);
             border: none;
-            border-radius: 6px;
+            border-radius: 50px;
             cursor: pointer;
             text-decoration: none;
-            transition: background-color 0.3s ease;
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.35);
+            transition: all 0.4s ease;
         }
         .fyp-button:hover {
-            background-color: #2980b9;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(52, 152, 219, 0.45);
+            background: linear-gradient(135deg, #2980b9, #3498db);
         }
         footer {
             text-align: center;
-            margin-top: 60px;
-            padding: 20px;
+            margin-top: 80px;
+            padding: 30px 0;
             color: #777;
-            font-size: 0.9em;
+            font-size: 0.95em;
+            border-top: 1px solid #eee;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            section { padding: 25px; }
+            .fyp-button { padding: 15px 40px; font-size: 1.1em; }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Dipsan Shrestha</h1>
-        <p class="intro">Bachelor in Information Technology (IT)</p>
+        <header>
+            <h1>Dipsan Shrestha</h1>
+            <p class="intro">Bachelor in Information Technology (IT)</p>
+        </header>
 
         <section>
             <h2>Skills</h2>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
+            <ul class="skills">
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6+)</li>
                 <li>PHP & Laravel Framework</li>
                 <li>MySQL Database</li>
+                <li>Responsive Web Design</li>
+                <li>Git & GitHub</li>
             </ul>
         </section>
 
         <section>
             <h2>Experience</h2>
-            <p>Academic projects and hands-on development experience during Bachelor studies.</p>
-            <!-- Add more details here if you have specific projects/internships -->
+            <p>Hands-on academic projects and development experience throughout Bachelor studies, including full-stack web applications, database design, and problem-solving using modern technologies.</p>
+            <!-- You can add more specific projects here later -->
         </section>
 
-        <section>
+        <section class="fyp-section">
             <h2>Final Year Project</h2>
-            <p>Click below to view details of my Final Year Project (FYP).</p>
+            <p>Explore my Final Year Project — Sewa Ghar Community Support Platform</p>
             <a href="https://fyp.dipsanshrestha.com.np" target="_blank" class="fyp-button">
                 View Final Year Project (FYP)
             </a>
         </section>
 
         <footer>
-            © 2026 Dipsan Shrestha | Portfolio Website
+            © 2026 Dipsan Shrestha | All Rights Reserved
         </footer>
     </div>
 
